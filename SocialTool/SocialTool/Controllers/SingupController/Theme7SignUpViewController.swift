@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
 
 class Theme7SignUpViewController: UIViewController {
     
