@@ -1,0 +1,6 @@
+framework module Pods_SocialTool {
+  umbrella header "Pods-SocialTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

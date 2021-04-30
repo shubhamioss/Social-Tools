@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class Theme7SignUpViewController: UIViewController {
     
@@ -62,6 +63,18 @@ class Theme7SignUpViewController: UIViewController {
     
     @IBAction func btnSignIn_Clicked(_ sender: Any) {
       //  THelper.btnAnimationLong(btn: btnContinue)
+        let db = Firestore.firestore()
+        db.collection("cities").document("LA").setData([
+            "name": "Los Angeles",
+            "state": "CA",
+            "country": "USA"
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
     }
     
     @IBAction func btnBack_Clicked(_ sender: Any) {
