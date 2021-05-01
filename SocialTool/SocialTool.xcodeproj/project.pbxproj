@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04547A96263C05310094A6BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04547A95263C05310094A6BA /* GoogleService-Info.plist */; };
+		0469AC93263D57BF00B04D52 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0469AC92263D57BF00B04D52 /* demo.mp4 */; };
 		049EF468263BC45E006839C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EF467263BC45E006839C5 /* AppDelegate.swift */; };
 		049EF46A263BC45E006839C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EF469263BC45E006839C5 /* SceneDelegate.swift */; };
 		049EF46C263BC45E006839C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EF46B263BC45E006839C5 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		04547A95263C05310094A6BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0469AC92263D57BF00B04D52 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		049EF464263BC45E006839C5 /* SocialTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049EF467263BC45E006839C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		049EF469263BC45E006839C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				049EF478263BC45F006839C5 /* Info.plist */,
 				04547A95263C05310094A6BA /* GoogleService-Info.plist */,
 				049EF470263BC45E006839C5 /* SocialTool.xcdatamodeld */,
+				0469AC92263D57BF00B04D52 /* demo.mp4 */,
 			);
 			path = SocialTool;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				049EF517263BE69C006839C5 /* Theme7SignUpViewController.xib in Resources */,
 				049EF46F263BC45E006839C5 /* Main.storyboard in Resources */,
 				049FFA17263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.xib in Resources */,
+				0469AC93263D57BF00B04D52 /* demo.mp4 in Resources */,
 				04547A96263C05310094A6BA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6BXEWKJ76;
 				INFOPLIST_FILE = SocialTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,6 +477,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6BXEWKJ76;
 				INFOPLIST_FILE = SocialTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

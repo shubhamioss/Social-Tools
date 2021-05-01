@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -30,6 +31,7 @@
                 <outlet property="lblHome" destination="TpZ-g0-GBy" id="Icw-7x-V1r"/>
                 <outlet property="lblProfile" destination="rUm-WM-poo" id="ROP-GD-jRj"/>
                 <outlet property="usernameLbl" destination="cSh-lB-aXz" id="NbZ-0u-DOa"/>
+                <outlet property="videoLayer" destination="bgD-tX-8RB" id="sNB-eO-o8G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="vwBottomNavi" destination="m0F-Bh-oZh" id="1Ei-sf-3wi"/>
                 <outlet property="vwSearch" destination="rcz-Wm-Jxy" id="qBk-3M-zNZ"/>
@@ -45,15 +47,15 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOb-3h-Ak2">
-                            <rect key="frame" x="8" y="16" width="65" height="40"/>
+                            <rect key="frame" x="8" y="16" width="40" height="40"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="65" id="18T-xU-Nj0"/>
+                                <constraint firstAttribute="width" constant="40" id="18T-xU-Nj0"/>
                                 <constraint firstAttribute="height" constant="40" id="vQd-hO-SaI"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="tintColor" red="0.32549019610000002" green="0.38431372549999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                            <state key="normal" title="Logout">
+                            <state key="normal" image="logout">
                                 <color key="titleColor" red="0.0" green="0.4549019608" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
@@ -74,13 +76,17 @@
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f62-yG-5bE">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="602"/>
                             <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgD-tX-8RB">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="587"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xq8-O7-Ook">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Antonio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSh-lB-aXz" customClass="ThemeLabel">
                                             <rect key="frame" x="24" y="24" width="272" height="35"/>
                                             <fontDescription key="fontDescription" name="HKGrotesk-Bold" family="HK Grotesk" pointSize="30"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="type">
@@ -91,7 +97,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would like to learn today? Search below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mi-2s-09P" customClass="ThemeLabel">
                                             <rect key="frame" x="16" y="75" width="288" height="42"/>
                                             <fontDescription key="fontDescription" name="HKGrotesk-Medium" family="HK Grotesk" pointSize="18"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="type">
@@ -117,8 +123,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcz-Wm-Jxy">
                                             <rect key="frame" x="16" y="16" width="288" height="70"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for a dish or meal " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YwH-Sc-FI9">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for editor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YwH-Sc-FI9">
                                                     <rect key="frame" x="8" y="0.0" width="206" height="70"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -133,7 +140,7 @@
                                                             </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                                                            <state key="normal" image="icoSearch"/>
+                                                            <state key="normal" image="editor"/>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxF-Iq-Q57">
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -182,10 +189,10 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBe-sc-Yu9">
                                     <rect key="frame" x="0.0" y="235" width="320" height="56"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUDYING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avV-Is-DKL" customClass="ThemeLabel">
-                                            <rect key="frame" x="8" y="8" width="91" height="40"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOCIAL EDITORS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avV-Is-DKL" customClass="ThemeLabel">
+                                            <rect key="frame" x="8" y="8" width="146.5" height="40"/>
                                             <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="18"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="type">
@@ -200,7 +207,7 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="18"/>
                                             <state key="normal" title="View All">
-                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
                                                 <action selector="btnViewAll_Clicked:" destination="-1" eventType="touchUpInside" id="Y9r-pr-JNV"/>
@@ -249,6 +256,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="ctI-Bb-9xd" secondAttribute="bottom" constant="16" id="3Cc-wI-bZh"/>
+                                <constraint firstItem="bgD-tX-8RB" firstAttribute="top" secondItem="f62-yG-5bE" secondAttribute="top" id="3oy-7R-r1E"/>
                                 <constraint firstItem="uBe-sc-Yu9" firstAttribute="top" secondItem="4K7-aw-Qfa" secondAttribute="bottom" id="5gS-By-xew"/>
                                 <constraint firstItem="xq8-O7-Ook" firstAttribute="leading" secondItem="f62-yG-5bE" secondAttribute="leading" id="9Ob-XO-kVp"/>
                                 <constraint firstAttribute="trailing" secondItem="xq8-O7-Ook" secondAttribute="trailing" id="Aww-8P-Lmh"/>
@@ -259,8 +267,11 @@
                                 <constraint firstItem="ctI-Bb-9xd" firstAttribute="top" secondItem="uBe-sc-Yu9" secondAttribute="bottom" id="JHo-Yr-gUW"/>
                                 <constraint firstItem="xq8-O7-Ook" firstAttribute="top" secondItem="f62-yG-5bE" secondAttribute="top" id="LvE-8c-hQk"/>
                                 <constraint firstItem="xq8-O7-Ook" firstAttribute="width" secondItem="f62-yG-5bE" secondAttribute="width" id="OhF-Yu-aWK"/>
+                                <constraint firstAttribute="trailing" secondItem="bgD-tX-8RB" secondAttribute="trailing" id="bMR-JA-hmr"/>
                                 <constraint firstItem="4K7-aw-Qfa" firstAttribute="top" secondItem="xq8-O7-Ook" secondAttribute="bottom" id="brQ-9Q-fcr"/>
                                 <constraint firstAttribute="trailing" secondItem="uBe-sc-Yu9" secondAttribute="trailing" id="e0i-X3-jaH"/>
+                                <constraint firstItem="bgD-tX-8RB" firstAttribute="leading" secondItem="f62-yG-5bE" secondAttribute="leading" id="hJn-em-JKJ"/>
+                                <constraint firstAttribute="bottom" secondItem="bgD-tX-8RB" secondAttribute="bottom" id="p1d-O4-e0g"/>
                                 <constraint firstItem="uBe-sc-Yu9" firstAttribute="leading" secondItem="f62-yG-5bE" secondAttribute="leading" id="x2X-Ya-dP8"/>
                             </constraints>
                         </scrollView>
@@ -290,7 +301,7 @@
                                                 <constraint firstAttribute="width" constant="30" id="YxJ-pw-6On"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <state key="normal" title="Button" image="Theme7icoHome"/>
+                                            <state key="normal" title="Button" image="home"/>
                                             <connections>
                                                 <action selector="btnHome_Clicked:" destination="-1" eventType="touchUpInside" id="N8w-mo-b1c"/>
                                             </connections>
@@ -345,12 +356,12 @@
                                                 <constraint firstAttribute="width" constant="30" id="IpT-1E-UT8"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <state key="normal" image="Theme7icoQuiz"/>
+                                            <state key="normal" image="vip"/>
                                             <connections>
                                                 <action selector="btnCource_Clicked:" destination="-1" eventType="touchUpInside" id="kCU-Op-nSy"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-Ja-baj">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-Ja-baj">
                                             <rect key="frame" x="8" y="42" width="89.5" height="21"/>
                                             <fontDescription key="fontDescription" name="HKGrotesk-Medium" family="HK Grotesk" pointSize="18"/>
                                             <nil key="textColor"/>
@@ -399,7 +410,7 @@
                                                 <constraint firstAttribute="width" constant="30" id="o5N-C3-ckF"/>
                                             </constraints>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <state key="normal" title="Button" image="Theme7icoUser"/>
+                                            <state key="normal" title="Button" image="profile"/>
                                             <connections>
                                                 <action selector="btn_Profile_Clicked:" destination="-1" eventType="touchUpInside" id="ZDY-B8-ONP"/>
                                             </connections>
@@ -478,9 +489,13 @@
         </view>
     </objects>
     <resources>
-        <image name="Theme7icoHome" width="512" height="512"/>
-        <image name="Theme7icoQuiz" width="512" height="512"/>
-        <image name="Theme7icoUser" width="240" height="240"/>
-        <image name="icoSearch" width="48" height="48"/>
+        <image name="editor" width="64" height="64"/>
+        <image name="home" width="128" height="128"/>
+        <image name="logout" width="64" height="64"/>
+        <image name="profile" width="128" height="128"/>
+        <image name="vip" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

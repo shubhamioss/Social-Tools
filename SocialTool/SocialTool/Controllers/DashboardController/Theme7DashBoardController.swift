@@ -8,12 +8,14 @@
 
 import UIKit
 import Keychain
+import AVFoundation
 
 class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     //MARK:-
     //MARK:- Outlets.
     
+    @IBOutlet weak var videoLayer: UIView!
     @IBOutlet weak var vwBottomNavi: UIView!
     @IBOutlet weak var vwSearch: UIView!
     @IBOutlet weak var vwbtnSearch: UIView!
@@ -28,15 +30,17 @@ class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UIC
     @IBOutlet weak var btnHomeImg: UIButton!
     @IBOutlet weak var btnCourcesImg: UIButton!
     @IBOutlet weak var btnProfileImg: UIButton!
+    var gameTimer: Timer?
+
     
     @IBOutlet weak var ConstraintSafeArea: NSLayoutConstraint!
     
     //MARK:-
     //MARK:- Variables.
     
-    var arrQuizName = ["Biology & The Scientific Metohd","Java Basics OOPS Concept","Investment and Types","Art and Painting Basic","Communication Basic","Geography Basics Metohds"]
-    var arrTotalQuiz = ["15 Quiz","10 Quiz","10 Quiz","10 Quiz","10 Quiz","5 Quiz"]
-    var arrQuizImg = ["Theme7cell1","Theme7cell2","Theme7cell6","Theme7cell5","Theme7imgCources1","Theme7cell3"]
+    var arrQuizName = ["PhotoGraphy","Photo & Video Editor","VideoGraphy"]
+    var arrTotalQuiz = ["Photo editor for social usage","Photo & Video editor for social usage","Video editor for multiple use"]
+    var arrQuizImg = ["1","2","3"]
     
     //MARK:-
     //MARK:- UIview Life Cycles.
@@ -44,11 +48,30 @@ class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UIC
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gameTimer = Timer.scheduledTimer(timeInterval: 12, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+        
         let data = Keychain.load("CurrentUser")
 
         usernameLbl.text = "Hi, \(data ?? "Human Being")"
         // Do any additional setup after loading the view.
         SetUpObject()
+        playVideo()
+    }
+    @objc func runTimedCode(){
+        playVideo()
+    }
+    
+    func playVideo(){
+        
+        guard let path = Bundle.main.path(forResource: "demo", ofType: "mp4")else { return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+        playerLayer.videoGravity = .resizeAspectFill
+        self.videoLayer.layer.addSublayer(playerLayer)
+        player.play()
+        
     }
     
     //MARK:-
@@ -83,7 +106,7 @@ class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UIC
     }
                   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
        
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -117,15 +140,14 @@ class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UIC
     @IBAction func btnBack_Clicked(_ sender: Any) {
         if Keychain.delete("loggedinUser") {
             
-            self.navigationController?.popToRootViewController(animated: true)
-            
         }
+        
+        self.navigationController?.popViewController(animated: true)
     }
        
     @IBAction func btnHome_Clicked(_ sender: Any) {
         self.vwBottomNavi.layer.cornerRadius = 20.0
-       // self.btnHomeImg.tintColor = ThemeManager.shared()?.color(forKey: "Theme4PrimaryColor1")
-        //self.lblHome.textColor = ThemeManager.shared()?.color(forKey: "Theme4PrimaryColor1")
+     
         self.btnCourcesImg.tintColor = .black
         self.lblCources.textColor = .black
         self.btnProfileImg.tintColor = .black
