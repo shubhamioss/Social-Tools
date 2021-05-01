@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import Keychain
 
 class Theme7SignUpViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class Theme7SignUpViewController: UIViewController {
     
     @IBOutlet weak var vwContinue: UIView!
     @IBOutlet weak var vwDetail: UIView!
+    @IBOutlet weak var usernameTxtfld: UITextField!
     @IBOutlet weak var btnRightArrow: UIButton!
     @IBOutlet weak var ConstraintSafeArea: NSLayoutConstraint!
     
@@ -64,18 +66,6 @@ class Theme7SignUpViewController: UIViewController {
     
     @IBAction func btnSignIn_Clicked(_ sender: Any) {
       //  THelper.btnAnimationLong(btn: btnContinue)
-        let db = Firestore.firestore()
-        db.collection("cities").document("LA").setData([
-            "name": "Los Angeles",
-            "state": "CA",
-            "country": "USA"
-        ]) { err in
-            if let err = err {
-                print("Error writing document: \(err)")
-            } else {
-                print("Document successfully written!")
-            }
-        }
     }
     
     @IBAction func btnBack_Clicked(_ sender: Any) {
@@ -83,7 +73,25 @@ class Theme7SignUpViewController: UIViewController {
     }
     
     @IBAction func btnContinue(_ sender: Any) {
-      
+        let db = Firestore.firestore()
+        db.collection("Users").document("\(usernameTxtfld.text ?? "shubhamios")").setData([
+            "name": "\(usernameTxtfld.text ?? "shubhamios")",
+            "Coins": 200
+        ]) { err in
+            if let err = err {
+                print(err)
+            } else {
+                
+                Keychain.save("userIn", forKey: "loggedinUser")
+                Keychain.save("\(self.usernameTxtfld.text ?? "shubhamios")", forKey: "CurrentUser")
+
+                let pieVC = Theme7DashBoardController()
+                pieVC.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                pieVC.modalPresentationStyle = .fullScreen
+                self.present(pieVC, animated: true, completion: nil)
+                
+            }
+        }
     }
     
     

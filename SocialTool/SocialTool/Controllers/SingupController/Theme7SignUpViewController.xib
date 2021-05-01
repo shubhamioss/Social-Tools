@@ -24,6 +24,7 @@
                 <outlet property="ConstraintSafeArea" destination="lmw-FG-maK" id="Y8r-CO-Gl5"/>
                 <outlet property="btnContinue" destination="11O-3r-mby" id="RY3-fZ-N0J"/>
                 <outlet property="btnRightArrow" destination="5Z1-iK-9PC" id="DJ9-Vy-Nmc"/>
+                <outlet property="usernameTxtfld" destination="OnP-kX-9be" id="IkM-lJ-THq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="vwContinue" destination="7O1-Wj-Lnu" id="FSF-YD-Lai"/>
                 <outlet property="vwDetail" destination="Kxr-Hg-OMf" id="0wI-sJ-ZAM"/>
@@ -106,7 +107,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GO1-OQ-194">
                                     <rect key="frame" x="8" y="8" width="256" height="50"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example:shubhamios" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OnP-kX-9be" customClass="ThemeTextField">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example:shubhamios" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OnP-kX-9be">
                                             <rect key="frame" x="12" y="0.0" width="232" height="50"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="HKGrotesk-Regular" family="HK Grotesk" pointSize="17"/>

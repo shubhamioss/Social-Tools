@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,10 @@
 		049EF512263BD45A006839C5 /* Theme12WalkThroughCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EF510263BD45A006839C5 /* Theme12WalkThroughCollectionCell.swift */; };
 		049EF517263BE69C006839C5 /* Theme7SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049EF515263BE69C006839C5 /* Theme7SignUpViewController.xib */; };
 		049EF518263BE69C006839C5 /* Theme7SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EF516263BE69C006839C5 /* Theme7SignUpViewController.swift */; };
+		049FFA10263D361D0095689A /* Theme7DashBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FFA0E263D361D0095689A /* Theme7DashBoardController.swift */; };
+		049FFA11263D361D0095689A /* Theme7DashBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049FFA0F263D361D0095689A /* Theme7DashBoardController.xib */; };
+		049FFA16263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FFA14263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.swift */; };
+		049FFA17263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049FFA15263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.xib */; };
 		1757B683E8CA8072878B13DD /* Pods_SocialTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D278E1D1CC834E42016306EB /* Pods_SocialTool.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		049EF510263BD45A006839C5 /* Theme12WalkThroughCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme12WalkThroughCollectionCell.swift; sourceTree = "<group>"; };
 		049EF515263BE69C006839C5 /* Theme7SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Theme7SignUpViewController.xib; sourceTree = "<group>"; };
 		049EF516263BE69C006839C5 /* Theme7SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme7SignUpViewController.swift; sourceTree = "<group>"; };
+		049FFA0E263D361D0095689A /* Theme7DashBoardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme7DashBoardController.swift; sourceTree = "<group>"; };
+		049FFA0F263D361D0095689A /* Theme7DashBoardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Theme7DashBoardController.xib; sourceTree = "<group>"; };
+		049FFA14263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme7DashBoardHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		049FFA15263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Theme7DashBoardHomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		132E1073EE17B235D60F52A6 /* Pods-SocialTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTool.debug.xcconfig"; path = "Target Support Files/Pods-SocialTool/Pods-SocialTool.debug.xcconfig"; sourceTree = "<group>"; };
 		8B7BB7317752DCF100DA19EE /* Pods-SocialTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTool.release.xcconfig"; path = "Target Support Files/Pods-SocialTool/Pods-SocialTool.release.xcconfig"; sourceTree = "<group>"; };
 		D278E1D1CC834E42016306EB /* Pods_SocialTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +114,7 @@
 		049EF507263BD389006839C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				049FFA0D263D36020095689A /* DashboardController */,
 				049EF514263BE68C006839C5 /* SingupController */,
 				049EF506263BD37E006839C5 /* WalkThroughController */,
 			);
@@ -130,6 +139,25 @@
 			path = SingupController;
 			sourceTree = "<group>";
 		};
+		049FFA0D263D36020095689A /* DashboardController */ = {
+			isa = PBXGroup;
+			children = (
+				049FFA13263D362F0095689A /* Cell */,
+				049FFA0E263D361D0095689A /* Theme7DashBoardController.swift */,
+				049FFA0F263D361D0095689A /* Theme7DashBoardController.xib */,
+			);
+			path = DashboardController;
+			sourceTree = "<group>";
+		};
+		049FFA13263D362F0095689A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				049FFA14263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.swift */,
+				049FFA15263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C64A9AAFE2CF69DA3652A46E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +172,6 @@
 				132E1073EE17B235D60F52A6 /* Pods-SocialTool.debug.xcconfig */,
 				8B7BB7317752DCF100DA19EE /* Pods-SocialTool.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,8 +238,10 @@
 				049EF477263BC45F006839C5 /* LaunchScreen.storyboard in Resources */,
 				049EF474263BC45F006839C5 /* Assets.xcassets in Resources */,
 				049EF50A263BD3BC006839C5 /* Theme12WalkThroughViewController.xib in Resources */,
+				049FFA11263D361D0095689A /* Theme7DashBoardController.xib in Resources */,
 				049EF517263BE69C006839C5 /* Theme7SignUpViewController.xib in Resources */,
 				049EF46F263BC45E006839C5 /* Main.storyboard in Resources */,
+				049FFA17263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.xib in Resources */,
 				04547A96263C05310094A6BA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049FFA10263D361D0095689A /* Theme7DashBoardController.swift in Sources */,
+				049FFA16263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.swift in Sources */,
 				049EF472263BC45E006839C5 /* SocialTool.xcdatamodeld in Sources */,
 				049EF518263BE69C006839C5 /* Theme7SignUpViewController.swift in Sources */,
 				049EF50B263BD3BC006839C5 /* Theme12WalkThroughViewController.swift in Sources */,

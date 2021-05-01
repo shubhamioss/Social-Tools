@@ -6,6 +6,8 @@ target 'SocialTool' do
   use_frameworks!
 pod 'Firebase/Analytics'
 pod 'Firebase/Firestore'
+pod "Keychain"
+
 
 
   # Pods for SocialTool
