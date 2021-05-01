@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         
         let data = Keychain.load("loggedinUser")
         
-        if data == "userIn"{
+        if data == "userIn"
+        {
             let vc = Theme7DashBoardController(nibName: "Theme7DashBoardController", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
         }else
