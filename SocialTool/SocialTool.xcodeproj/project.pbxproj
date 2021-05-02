@@ -7,6 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0436B4C7263E768800FA3A92 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B47E263E768800FA3A92 /* FilterCell.swift */; };
+		0436B4C8263E768800FA3A92 /* FramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B47F263E768800FA3A92 /* FramesCell.swift */; };
+		0436B4C9263E768800FA3A92 /* MainStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B480263E768800FA3A92 /* MainStickerCell.swift */; };
+		0436B4CA263E768800FA3A92 /* allFramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B481263E768800FA3A92 /* allFramesCell.swift */; };
+		0436B4CB263E768800FA3A92 /* SelectItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B482263E768800FA3A92 /* SelectItemCell.swift */; };
+		0436B4CC263E768800FA3A92 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B483263E768800FA3A92 /* StickerCell.swift */; };
+		0436B4CD263E768800FA3A92 /* StickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436B484263E768800FA3A92 /* StickerCell.xib */; };
+		0436B4CE263E768800FA3A92 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436B485263E768800FA3A92 /* FilterCell.xib */; };
+		0436B4CF263E768800FA3A92 /* FramesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436B486263E768800FA3A92 /* FramesCell.xib */; };
+		0436B4D0263E768800FA3A92 /* MainStickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436B487263E768800FA3A92 /* MainStickerCell.xib */; };
+		0436B4D1263E768800FA3A92 /* allFramesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436B488263E768800FA3A92 /* allFramesCell.xib */; };
+		0436B4D2263E768800FA3A92 /* SelectItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436B489263E768800FA3A92 /* SelectItemCell.xib */; };
+		0436B4D3263E768800FA3A92 /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B48B263E768800FA3A92 /* SwiftyTimer.swift */; };
+		0436B4D4263E768800FA3A92 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B48C263E768800FA3A92 /* Global.swift */; };
+		0436B4D5263E768800FA3A92 /* PentagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B48D263E768800FA3A92 /* PentagonView.swift */; };
+		0436B4D6263E768800FA3A92 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B48E263E768800FA3A92 /* Helpers.swift */; };
+		0436B4D7263E768800FA3A92 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B48F263E768800FA3A92 /* Filters.swift */; };
+		0436B4D8263E768800FA3A92 /* tblStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B491263E768800FA3A92 /* tblStyleCell.swift */; };
+		0436B4D9263E768800FA3A92 /* tblStyleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0436B492263E768800FA3A92 /* tblStyleCell.xib */; };
+		0436B4DA263E768800FA3A92 /* Adine Kirnberg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B495263E768800FA3A92 /* Adine Kirnberg.ttf */; };
+		0436B4DB263E768800FA3A92 /* champignonaltswash.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B496263E768800FA3A92 /* champignonaltswash.ttf */; };
+		0436B4DC263E768800FA3A92 /* Advertising Script Monoline Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B497263E768800FA3A92 /* Advertising Script Monoline Trial.ttf */; };
+		0436B4DD263E768800FA3A92 /* AguafinaScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B498263E768800FA3A92 /* AguafinaScript-Regular.ttf */; };
+		0436B4DE263E768800FA3A92 /* Allura-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B499263E768800FA3A92 /* Allura-Regular.ttf */; };
+		0436B4DF263E768900FA3A92 /* Script Writing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B49A263E768800FA3A92 /* Script Writing.ttf */; };
+		0436B4E0263E768900FA3A92 /* waltograph42.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B49B263E768800FA3A92 /* waltograph42.otf */; };
+		0436B4E1263E768900FA3A92 /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B49C263E768800FA3A92 /* AlexBrush-Regular.ttf */; };
+		0436B4E2263E768900FA3A92 /* akaDora.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B49D263E768800FA3A92 /* akaDora.otf */; };
+		0436B4E3263E768900FA3A92 /* Bucanera-font-FFP.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B49E263E768800FA3A92 /* Bucanera-font-FFP.ttf */; };
+		0436B4E4263E768900FA3A92 /* Serling Script Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B49F263E768800FA3A92 /* Serling Script Regular.otf */; };
+		0436B4E5263E768900FA3A92 /* QUIGLEYW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A0263E768800FA3A92 /* QUIGLEYW.ttf */; };
+		0436B4E6263E768900FA3A92 /* VTC-BadTattooHandOne.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A1263E768800FA3A92 /* VTC-BadTattooHandOne.otf */; };
+		0436B4E7263E768900FA3A92 /* Granada Blues Personal Use.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A2263E768800FA3A92 /* Granada Blues Personal Use.ttf */; };
+		0436B4E8263E768900FA3A92 /* Ginga.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A3263E768800FA3A92 /* Ginga.ttf */; };
+		0436B4E9263E768900FA3A92 /* LittleLordFontleroyNF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A4263E768800FA3A92 /* LittleLordFontleroyNF.ttf */; };
+		0436B4EA263E768900FA3A92 /* The Heart of Everything Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A5263E768800FA3A92 /* The Heart of Everything Demo.ttf */; };
+		0436B4EB263E768900FA3A92 /* Playball-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A6263E768800FA3A92 /* Playball-Regular.ttf */; };
+		0436B4EC263E768900FA3A92 /* Mf Gradient Goddess.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A7263E768800FA3A92 /* Mf Gradient Goddess.ttf */; };
+		0436B4ED263E768900FA3A92 /* Dohearts.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A8263E768800FA3A92 /* Dohearts.otf */; };
+		0436B4EE263E768900FA3A92 /* PlumScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4A9263E768800FA3A92 /* PlumScript.ttf */; };
+		0436B4EF263E768900FA3A92 /* Variane Script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4AA263E768800FA3A92 /* Variane Script.ttf */; };
+		0436B4F0263E768900FA3A92 /* Alleana Script.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4AB263E768800FA3A92 /* Alleana Script.otf */; };
+		0436B4F1263E768900FA3A92 /* Arizonia-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4AC263E768800FA3A92 /* Arizonia-Regular.ttf */; };
+		0436B4F2263E768900FA3A92 /* Enjoy Personal Use.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4AD263E768800FA3A92 /* Enjoy Personal Use.otf */; };
+		0436B4F3263E768900FA3A92 /* VTKS SummerLAnd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4AE263E768800FA3A92 /* VTKS SummerLAnd.ttf */; };
+		0436B4F4263E768900FA3A92 /* alsscrp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4AF263E768800FA3A92 /* alsscrp.ttf */; };
+		0436B4F5263E768900FA3A92 /* Montez-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4B0263E768800FA3A92 /* Montez-Regular.ttf */; };
+		0436B4F6263E768900FA3A92 /* Advertising Script Bold Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4B1263E768800FA3A92 /* Advertising Script Bold Trial.ttf */; };
+		0436B4F7263E768900FA3A92 /* Pretty Girls Script Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4B2263E768800FA3A92 /* Pretty Girls Script Demo.ttf */; };
+		0436B4F8263E768900FA3A92 /* a Theme for murder.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4B3263E768800FA3A92 /* a Theme for murder.ttf */; };
+		0436B4F9263E768900FA3A92 /* Miama.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0436B4B4263E768800FA3A92 /* Miama.ttf */; };
+		0436B4FA263E768900FA3A92 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4B7263E768800FA3A92 /* StickerView.swift */; };
+		0436B4FB263E768900FA3A92 /* JLStickerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4B9263E768800FA3A92 /* JLStickerImageView.swift */; };
+		0436B4FC263E768900FA3A92 /* JLStickerLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4BA263E768800FA3A92 /* JLStickerLabelView.swift */; };
+		0436B4FD263E768900FA3A92 /* JLAttributedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4BB263E768800FA3A92 /* JLAttributedTextView.swift */; };
+		0436B4FE263E768900FA3A92 /* CalcuteFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4BC263E768800FA3A92 /* CalcuteFunctions.swift */; };
+		0436B4FF263E768900FA3A92 /* adjustToFitFontOrWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4BD263E768800FA3A92 /* adjustToFitFontOrWidth.swift */; };
+		0436B500263E768900FA3A92 /* PressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4BF263E768800FA3A92 /* PressButton.m */; };
+		0436B501263E768900FA3A92 /* SelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4C0263E768800FA3A92 /* SelectionButton.m */; };
+		0436B502263E768900FA3A92 /* FamButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4C1263E768800FA3A92 /* FamButton.m */; };
+		0436B503263E768900FA3A92 /* MagnificationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0436B4C5263E768800FA3A92 /* MagnificationButton.m */; };
+		0436B50D263E7AE500FA3A92 /* EditImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B506263E7AE400FA3A92 /* EditImageVC.swift */; };
+		0436B50E263E7AE500FA3A92 /* MyAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B507263E7AE500FA3A92 /* MyAlbumVC.swift */; };
+		0436B50F263E7AE500FA3A92 /* PresentPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B508263E7AE500FA3A92 /* PresentPhotoVC.swift */; };
+		0436B510263E7AE500FA3A92 /* LoadShapesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B509263E7AE500FA3A92 /* LoadShapesVC.swift */; };
+		0436B511263E7AE500FA3A92 /* PresentTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B50A263E7AE500FA3A92 /* PresentTextVC.swift */; };
+		0436B512263E7AE500FA3A92 /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B50B263E7AE500FA3A92 /* ShareVC.swift */; };
+		0436B513263E7AE500FA3A92 /* StickersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436B50C263E7AE500FA3A92 /* StickersVC.swift */; };
 		04547A96263C05310094A6BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04547A95263C05310094A6BA /* GoogleService-Info.plist */; };
 		0469AC93263D57BF00B04D52 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0469AC92263D57BF00B04D52 /* demo.mp4 */; };
 		049EF468263BC45E006839C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EF467263BC45E006839C5 /* AppDelegate.swift */; };
@@ -30,6 +98,78 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0436B47E263E768800FA3A92 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		0436B47F263E768800FA3A92 /* FramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FramesCell.swift; sourceTree = "<group>"; };
+		0436B480263E768800FA3A92 /* MainStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStickerCell.swift; sourceTree = "<group>"; };
+		0436B481263E768800FA3A92 /* allFramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allFramesCell.swift; sourceTree = "<group>"; };
+		0436B482263E768800FA3A92 /* SelectItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectItemCell.swift; sourceTree = "<group>"; };
+		0436B483263E768800FA3A92 /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		0436B484263E768800FA3A92 /* StickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StickerCell.xib; sourceTree = "<group>"; };
+		0436B485263E768800FA3A92 /* FilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		0436B486263E768800FA3A92 /* FramesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FramesCell.xib; sourceTree = "<group>"; };
+		0436B487263E768800FA3A92 /* MainStickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainStickerCell.xib; sourceTree = "<group>"; };
+		0436B488263E768800FA3A92 /* allFramesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = allFramesCell.xib; sourceTree = "<group>"; };
+		0436B489263E768800FA3A92 /* SelectItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectItemCell.xib; sourceTree = "<group>"; };
+		0436B48B263E768800FA3A92 /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
+		0436B48C263E768800FA3A92 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		0436B48D263E768800FA3A92 /* PentagonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PentagonView.swift; sourceTree = "<group>"; };
+		0436B48E263E768800FA3A92 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		0436B48F263E768800FA3A92 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		0436B491263E768800FA3A92 /* tblStyleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tblStyleCell.swift; sourceTree = "<group>"; };
+		0436B492263E768800FA3A92 /* tblStyleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tblStyleCell.xib; sourceTree = "<group>"; };
+		0436B495263E768800FA3A92 /* Adine Kirnberg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adine Kirnberg.ttf"; sourceTree = "<group>"; };
+		0436B496263E768800FA3A92 /* champignonaltswash.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = champignonaltswash.ttf; sourceTree = "<group>"; };
+		0436B497263E768800FA3A92 /* Advertising Script Monoline Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advertising Script Monoline Trial.ttf"; sourceTree = "<group>"; };
+		0436B498263E768800FA3A92 /* AguafinaScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AguafinaScript-Regular.ttf"; sourceTree = "<group>"; };
+		0436B499263E768800FA3A92 /* Allura-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Allura-Regular.ttf"; sourceTree = "<group>"; };
+		0436B49A263E768800FA3A92 /* Script Writing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Script Writing.ttf"; sourceTree = "<group>"; };
+		0436B49B263E768800FA3A92 /* waltograph42.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = waltograph42.otf; sourceTree = "<group>"; };
+		0436B49C263E768800FA3A92 /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
+		0436B49D263E768800FA3A92 /* akaDora.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = akaDora.otf; sourceTree = "<group>"; };
+		0436B49E263E768800FA3A92 /* Bucanera-font-FFP.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bucanera-font-FFP.ttf"; sourceTree = "<group>"; };
+		0436B49F263E768800FA3A92 /* Serling Script Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Serling Script Regular.otf"; sourceTree = "<group>"; };
+		0436B4A0263E768800FA3A92 /* QUIGLEYW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QUIGLEYW.ttf; sourceTree = "<group>"; };
+		0436B4A1263E768800FA3A92 /* VTC-BadTattooHandOne.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VTC-BadTattooHandOne.otf"; sourceTree = "<group>"; };
+		0436B4A2263E768800FA3A92 /* Granada Blues Personal Use.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Granada Blues Personal Use.ttf"; sourceTree = "<group>"; };
+		0436B4A3263E768800FA3A92 /* Ginga.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ginga.ttf; sourceTree = "<group>"; };
+		0436B4A4263E768800FA3A92 /* LittleLordFontleroyNF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LittleLordFontleroyNF.ttf; sourceTree = "<group>"; };
+		0436B4A5263E768800FA3A92 /* The Heart of Everything Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Heart of Everything Demo.ttf"; sourceTree = "<group>"; };
+		0436B4A6263E768800FA3A92 /* Playball-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Playball-Regular.ttf"; sourceTree = "<group>"; };
+		0436B4A7263E768800FA3A92 /* Mf Gradient Goddess.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mf Gradient Goddess.ttf"; sourceTree = "<group>"; };
+		0436B4A8263E768800FA3A92 /* Dohearts.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dohearts.otf; sourceTree = "<group>"; };
+		0436B4A9263E768800FA3A92 /* PlumScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlumScript.ttf; sourceTree = "<group>"; };
+		0436B4AA263E768800FA3A92 /* Variane Script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Variane Script.ttf"; sourceTree = "<group>"; };
+		0436B4AB263E768800FA3A92 /* Alleana Script.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alleana Script.otf"; sourceTree = "<group>"; };
+		0436B4AC263E768800FA3A92 /* Arizonia-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arizonia-Regular.ttf"; sourceTree = "<group>"; };
+		0436B4AD263E768800FA3A92 /* Enjoy Personal Use.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Enjoy Personal Use.otf"; sourceTree = "<group>"; };
+		0436B4AE263E768800FA3A92 /* VTKS SummerLAnd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VTKS SummerLAnd.ttf"; sourceTree = "<group>"; };
+		0436B4AF263E768800FA3A92 /* alsscrp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alsscrp.ttf; sourceTree = "<group>"; };
+		0436B4B0263E768800FA3A92 /* Montez-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montez-Regular.ttf"; sourceTree = "<group>"; };
+		0436B4B1263E768800FA3A92 /* Advertising Script Bold Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advertising Script Bold Trial.ttf"; sourceTree = "<group>"; };
+		0436B4B2263E768800FA3A92 /* Pretty Girls Script Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretty Girls Script Demo.ttf"; sourceTree = "<group>"; };
+		0436B4B3263E768800FA3A92 /* a Theme for murder.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a Theme for murder.ttf"; sourceTree = "<group>"; };
+		0436B4B4263E768800FA3A92 /* Miama.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miama.ttf; sourceTree = "<group>"; };
+		0436B4B7263E768800FA3A92 /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		0436B4B9263E768800FA3A92 /* JLStickerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLStickerImageView.swift; sourceTree = "<group>"; };
+		0436B4BA263E768800FA3A92 /* JLStickerLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLStickerLabelView.swift; sourceTree = "<group>"; };
+		0436B4BB263E768800FA3A92 /* JLAttributedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLAttributedTextView.swift; sourceTree = "<group>"; };
+		0436B4BC263E768800FA3A92 /* CalcuteFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcuteFunctions.swift; sourceTree = "<group>"; };
+		0436B4BD263E768800FA3A92 /* adjustToFitFontOrWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adjustToFitFontOrWidth.swift; sourceTree = "<group>"; };
+		0436B4BF263E768800FA3A92 /* PressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PressButton.m; sourceTree = "<group>"; };
+		0436B4C0263E768800FA3A92 /* SelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionButton.m; sourceTree = "<group>"; };
+		0436B4C1263E768800FA3A92 /* FamButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamButton.m; sourceTree = "<group>"; };
+		0436B4C2263E768800FA3A92 /* MagnificationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnificationButton.h; sourceTree = "<group>"; };
+		0436B4C3263E768800FA3A92 /* SelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionButton.h; sourceTree = "<group>"; };
+		0436B4C4263E768800FA3A92 /* PressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PressButton.h; sourceTree = "<group>"; };
+		0436B4C5263E768800FA3A92 /* MagnificationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnificationButton.m; sourceTree = "<group>"; };
+		0436B4C6263E768800FA3A92 /* FamButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamButton.h; sourceTree = "<group>"; };
+		0436B506263E7AE400FA3A92 /* EditImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageVC.swift; sourceTree = "<group>"; };
+		0436B507263E7AE500FA3A92 /* MyAlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlbumVC.swift; sourceTree = "<group>"; };
+		0436B508263E7AE500FA3A92 /* PresentPhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentPhotoVC.swift; sourceTree = "<group>"; };
+		0436B509263E7AE500FA3A92 /* LoadShapesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadShapesVC.swift; sourceTree = "<group>"; };
+		0436B50A263E7AE500FA3A92 /* PresentTextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentTextVC.swift; sourceTree = "<group>"; };
+		0436B50B263E7AE500FA3A92 /* ShareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
+		0436B50C263E7AE500FA3A92 /* StickersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersVC.swift; sourceTree = "<group>"; };
 		04547A95263C05310094A6BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0469AC92263D57BF00B04D52 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		049EF464263BC45E006839C5 /* SocialTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +208,165 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0436B47C263E767300FA3A92 /* GridController */ = {
+			isa = PBXGroup;
+			children = (
+				0436B505263E7AC800FA3A92 /* EditorsControllers */,
+				0436B47D263E768800FA3A92 /* Cells */,
+				0436B48A263E768800FA3A92 /* Global */,
+				0436B4B5263E768800FA3A92 /* Library */,
+				0436B493263E768800FA3A92 /* Resources */,
+				0436B490263E768800FA3A92 /* TblCell */,
+			);
+			path = GridController;
+			sourceTree = "<group>";
+		};
+		0436B47D263E768800FA3A92 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0436B47E263E768800FA3A92 /* FilterCell.swift */,
+				0436B47F263E768800FA3A92 /* FramesCell.swift */,
+				0436B480263E768800FA3A92 /* MainStickerCell.swift */,
+				0436B481263E768800FA3A92 /* allFramesCell.swift */,
+				0436B482263E768800FA3A92 /* SelectItemCell.swift */,
+				0436B483263E768800FA3A92 /* StickerCell.swift */,
+				0436B484263E768800FA3A92 /* StickerCell.xib */,
+				0436B485263E768800FA3A92 /* FilterCell.xib */,
+				0436B486263E768800FA3A92 /* FramesCell.xib */,
+				0436B487263E768800FA3A92 /* MainStickerCell.xib */,
+				0436B488263E768800FA3A92 /* allFramesCell.xib */,
+				0436B489263E768800FA3A92 /* SelectItemCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0436B48A263E768800FA3A92 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				0436B48B263E768800FA3A92 /* SwiftyTimer.swift */,
+				0436B48C263E768800FA3A92 /* Global.swift */,
+				0436B48D263E768800FA3A92 /* PentagonView.swift */,
+				0436B48E263E768800FA3A92 /* Helpers.swift */,
+				0436B48F263E768800FA3A92 /* Filters.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		0436B490263E768800FA3A92 /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				0436B491263E768800FA3A92 /* tblStyleCell.swift */,
+				0436B492263E768800FA3A92 /* tblStyleCell.xib */,
+			);
+			path = TblCell;
+			sourceTree = "<group>";
+		};
+		0436B493263E768800FA3A92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0436B494263E768800FA3A92 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0436B494263E768800FA3A92 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0436B495263E768800FA3A92 /* Adine Kirnberg.ttf */,
+				0436B496263E768800FA3A92 /* champignonaltswash.ttf */,
+				0436B497263E768800FA3A92 /* Advertising Script Monoline Trial.ttf */,
+				0436B498263E768800FA3A92 /* AguafinaScript-Regular.ttf */,
+				0436B499263E768800FA3A92 /* Allura-Regular.ttf */,
+				0436B49A263E768800FA3A92 /* Script Writing.ttf */,
+				0436B49B263E768800FA3A92 /* waltograph42.otf */,
+				0436B49C263E768800FA3A92 /* AlexBrush-Regular.ttf */,
+				0436B49D263E768800FA3A92 /* akaDora.otf */,
+				0436B49E263E768800FA3A92 /* Bucanera-font-FFP.ttf */,
+				0436B49F263E768800FA3A92 /* Serling Script Regular.otf */,
+				0436B4A0263E768800FA3A92 /* QUIGLEYW.ttf */,
+				0436B4A1263E768800FA3A92 /* VTC-BadTattooHandOne.otf */,
+				0436B4A2263E768800FA3A92 /* Granada Blues Personal Use.ttf */,
+				0436B4A3263E768800FA3A92 /* Ginga.ttf */,
+				0436B4A4263E768800FA3A92 /* LittleLordFontleroyNF.ttf */,
+				0436B4A5263E768800FA3A92 /* The Heart of Everything Demo.ttf */,
+				0436B4A6263E768800FA3A92 /* Playball-Regular.ttf */,
+				0436B4A7263E768800FA3A92 /* Mf Gradient Goddess.ttf */,
+				0436B4A8263E768800FA3A92 /* Dohearts.otf */,
+				0436B4A9263E768800FA3A92 /* PlumScript.ttf */,
+				0436B4AA263E768800FA3A92 /* Variane Script.ttf */,
+				0436B4AB263E768800FA3A92 /* Alleana Script.otf */,
+				0436B4AC263E768800FA3A92 /* Arizonia-Regular.ttf */,
+				0436B4AD263E768800FA3A92 /* Enjoy Personal Use.otf */,
+				0436B4AE263E768800FA3A92 /* VTKS SummerLAnd.ttf */,
+				0436B4AF263E768800FA3A92 /* alsscrp.ttf */,
+				0436B4B0263E768800FA3A92 /* Montez-Regular.ttf */,
+				0436B4B1263E768800FA3A92 /* Advertising Script Bold Trial.ttf */,
+				0436B4B2263E768800FA3A92 /* Pretty Girls Script Demo.ttf */,
+				0436B4B3263E768800FA3A92 /* a Theme for murder.ttf */,
+				0436B4B4263E768800FA3A92 /* Miama.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		0436B4B5263E768800FA3A92 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0436B4B6263E768800FA3A92 /* StickerView */,
+				0436B4B8263E768800FA3A92 /* JLImageView */,
+				0436B4BE263E768800FA3A92 /* AnimatedButton */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0436B4B6263E768800FA3A92 /* StickerView */ = {
+			isa = PBXGroup;
+			children = (
+				0436B4B7263E768800FA3A92 /* StickerView.swift */,
+			);
+			path = StickerView;
+			sourceTree = "<group>";
+		};
+		0436B4B8263E768800FA3A92 /* JLImageView */ = {
+			isa = PBXGroup;
+			children = (
+				0436B4B9263E768800FA3A92 /* JLStickerImageView.swift */,
+				0436B4BA263E768800FA3A92 /* JLStickerLabelView.swift */,
+				0436B4BB263E768800FA3A92 /* JLAttributedTextView.swift */,
+				0436B4BC263E768800FA3A92 /* CalcuteFunctions.swift */,
+				0436B4BD263E768800FA3A92 /* adjustToFitFontOrWidth.swift */,
+			);
+			path = JLImageView;
+			sourceTree = "<group>";
+		};
+		0436B4BE263E768800FA3A92 /* AnimatedButton */ = {
+			isa = PBXGroup;
+			children = (
+				0436B4BF263E768800FA3A92 /* PressButton.m */,
+				0436B4C0263E768800FA3A92 /* SelectionButton.m */,
+				0436B4C1263E768800FA3A92 /* FamButton.m */,
+				0436B4C2263E768800FA3A92 /* MagnificationButton.h */,
+				0436B4C3263E768800FA3A92 /* SelectionButton.h */,
+				0436B4C4263E768800FA3A92 /* PressButton.h */,
+				0436B4C5263E768800FA3A92 /* MagnificationButton.m */,
+				0436B4C6263E768800FA3A92 /* FamButton.h */,
+			);
+			path = AnimatedButton;
+			sourceTree = "<group>";
+		};
+		0436B505263E7AC800FA3A92 /* EditorsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0436B506263E7AE400FA3A92 /* EditImageVC.swift */,
+				0436B509263E7AE500FA3A92 /* LoadShapesVC.swift */,
+				0436B507263E7AE500FA3A92 /* MyAlbumVC.swift */,
+				0436B508263E7AE500FA3A92 /* PresentPhotoVC.swift */,
+				0436B50A263E7AE500FA3A92 /* PresentTextVC.swift */,
+				0436B50B263E7AE500FA3A92 /* ShareVC.swift */,
+				0436B50C263E7AE500FA3A92 /* StickersVC.swift */,
+			);
+			path = EditorsControllers;
+			sourceTree = "<group>";
+		};
 		049EF45B263BC45E006839C5 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +416,7 @@
 		049EF507263BD389006839C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0436B47C263E767300FA3A92 /* GridController */,
 				049FFA0D263D36020095689A /* DashboardController */,
 				049EF514263BE68C006839C5 /* SingupController */,
 				049EF506263BD37E006839C5 /* WalkThroughController */,
@@ -237,16 +537,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0436B4E9263E768900FA3A92 /* LittleLordFontleroyNF.ttf in Resources */,
+				0436B4F9263E768900FA3A92 /* Miama.ttf in Resources */,
+				0436B4F6263E768900FA3A92 /* Advertising Script Bold Trial.ttf in Resources */,
 				049EF511263BD45A006839C5 /* Theme12WalkThroughCollectionCell.xib in Resources */,
 				049EF477263BC45F006839C5 /* LaunchScreen.storyboard in Resources */,
+				0436B4E1263E768900FA3A92 /* AlexBrush-Regular.ttf in Resources */,
+				0436B4DF263E768900FA3A92 /* Script Writing.ttf in Resources */,
+				0436B4F2263E768900FA3A92 /* Enjoy Personal Use.otf in Resources */,
+				0436B4EE263E768900FA3A92 /* PlumScript.ttf in Resources */,
+				0436B4D2263E768800FA3A92 /* SelectItemCell.xib in Resources */,
+				0436B4DA263E768800FA3A92 /* Adine Kirnberg.ttf in Resources */,
 				049EF474263BC45F006839C5 /* Assets.xcassets in Resources */,
+				0436B4EA263E768900FA3A92 /* The Heart of Everything Demo.ttf in Resources */,
+				0436B4E0263E768900FA3A92 /* waltograph42.otf in Resources */,
 				049EF50A263BD3BC006839C5 /* Theme12WalkThroughViewController.xib in Resources */,
+				0436B4E7263E768900FA3A92 /* Granada Blues Personal Use.ttf in Resources */,
+				0436B4DB263E768800FA3A92 /* champignonaltswash.ttf in Resources */,
+				0436B4E8263E768900FA3A92 /* Ginga.ttf in Resources */,
+				0436B4CD263E768800FA3A92 /* StickerCell.xib in Resources */,
+				0436B4D1263E768800FA3A92 /* allFramesCell.xib in Resources */,
+				0436B4EF263E768900FA3A92 /* Variane Script.ttf in Resources */,
 				049FFA11263D361D0095689A /* Theme7DashBoardController.xib in Resources */,
+				0436B4F3263E768900FA3A92 /* VTKS SummerLAnd.ttf in Resources */,
+				0436B4EB263E768900FA3A92 /* Playball-Regular.ttf in Resources */,
+				0436B4F0263E768900FA3A92 /* Alleana Script.otf in Resources */,
 				049EF517263BE69C006839C5 /* Theme7SignUpViewController.xib in Resources */,
+				0436B4DC263E768800FA3A92 /* Advertising Script Monoline Trial.ttf in Resources */,
 				049EF46F263BC45E006839C5 /* Main.storyboard in Resources */,
+				0436B4F1263E768900FA3A92 /* Arizonia-Regular.ttf in Resources */,
 				049FFA17263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.xib in Resources */,
+				0436B4CE263E768800FA3A92 /* FilterCell.xib in Resources */,
+				0436B4F5263E768900FA3A92 /* Montez-Regular.ttf in Resources */,
+				0436B4E6263E768900FA3A92 /* VTC-BadTattooHandOne.otf in Resources */,
+				0436B4D9263E768800FA3A92 /* tblStyleCell.xib in Resources */,
+				0436B4EC263E768900FA3A92 /* Mf Gradient Goddess.ttf in Resources */,
+				0436B4ED263E768900FA3A92 /* Dohearts.otf in Resources */,
+				0436B4F7263E768900FA3A92 /* Pretty Girls Script Demo.ttf in Resources */,
+				0436B4E3263E768900FA3A92 /* Bucanera-font-FFP.ttf in Resources */,
+				0436B4E5263E768900FA3A92 /* QUIGLEYW.ttf in Resources */,
+				0436B4E4263E768900FA3A92 /* Serling Script Regular.otf in Resources */,
 				0469AC93263D57BF00B04D52 /* demo.mp4 in Resources */,
+				0436B4CF263E768800FA3A92 /* FramesCell.xib in Resources */,
+				0436B4D0263E768800FA3A92 /* MainStickerCell.xib in Resources */,
 				04547A96263C05310094A6BA /* GoogleService-Info.plist in Resources */,
+				0436B4DE263E768800FA3A92 /* Allura-Regular.ttf in Resources */,
+				0436B4F8263E768900FA3A92 /* a Theme for murder.ttf in Resources */,
+				0436B4DD263E768800FA3A92 /* AguafinaScript-Regular.ttf in Resources */,
+				0436B4E2263E768900FA3A92 /* akaDora.otf in Resources */,
+				0436B4F4263E768900FA3A92 /* alsscrp.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,15 +638,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0436B4CB263E768800FA3A92 /* SelectItemCell.swift in Sources */,
+				0436B4FC263E768900FA3A92 /* JLStickerLabelView.swift in Sources */,
+				0436B4D7263E768800FA3A92 /* Filters.swift in Sources */,
+				0436B4D6263E768800FA3A92 /* Helpers.swift in Sources */,
+				0436B502263E768900FA3A92 /* FamButton.m in Sources */,
 				049FFA10263D361D0095689A /* Theme7DashBoardController.swift in Sources */,
+				0436B4D8263E768800FA3A92 /* tblStyleCell.swift in Sources */,
 				049FFA16263D36400095689A /* Theme7DashBoardHomeCollectionViewCell.swift in Sources */,
+				0436B4D3263E768800FA3A92 /* SwiftyTimer.swift in Sources */,
+				0436B511263E7AE500FA3A92 /* PresentTextVC.swift in Sources */,
 				049EF472263BC45E006839C5 /* SocialTool.xcdatamodeld in Sources */,
+				0436B512263E7AE500FA3A92 /* ShareVC.swift in Sources */,
 				049EF518263BE69C006839C5 /* Theme7SignUpViewController.swift in Sources */,
+				0436B503263E768900FA3A92 /* MagnificationButton.m in Sources */,
 				049EF50B263BD3BC006839C5 /* Theme12WalkThroughViewController.swift in Sources */,
 				049EF46C263BC45E006839C5 /* ViewController.swift in Sources */,
+				0436B510263E7AE500FA3A92 /* LoadShapesVC.swift in Sources */,
+				0436B50E263E7AE500FA3A92 /* MyAlbumVC.swift in Sources */,
+				0436B50D263E7AE500FA3A92 /* EditImageVC.swift in Sources */,
+				0436B4D5263E768800FA3A92 /* PentagonView.swift in Sources */,
+				0436B513263E7AE500FA3A92 /* StickersVC.swift in Sources */,
+				0436B4C9263E768800FA3A92 /* MainStickerCell.swift in Sources */,
+				0436B4CA263E768800FA3A92 /* allFramesCell.swift in Sources */,
+				0436B4C8263E768800FA3A92 /* FramesCell.swift in Sources */,
+				0436B4FD263E768900FA3A92 /* JLAttributedTextView.swift in Sources */,
+				0436B4FF263E768900FA3A92 /* adjustToFitFontOrWidth.swift in Sources */,
+				0436B4FE263E768900FA3A92 /* CalcuteFunctions.swift in Sources */,
 				049EF468263BC45E006839C5 /* AppDelegate.swift in Sources */,
+				0436B4FA263E768900FA3A92 /* StickerView.swift in Sources */,
 				049EF46A263BC45E006839C5 /* SceneDelegate.swift in Sources */,
 				049EF512263BD45A006839C5 /* Theme12WalkThroughCollectionCell.swift in Sources */,
+				0436B4CC263E768800FA3A92 /* StickerCell.swift in Sources */,
+				0436B4FB263E768900FA3A92 /* JLStickerImageView.swift in Sources */,
+				0436B501263E768900FA3A92 /* SelectionButton.m in Sources */,
+				0436B500263E768900FA3A92 /* PressButton.m in Sources */,
+				0436B50F263E7AE500FA3A92 /* PresentPhotoVC.swift in Sources */,
+				0436B4C7263E768800FA3A92 /* FilterCell.swift in Sources */,
+				0436B4D4263E768800FA3A92 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

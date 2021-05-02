@@ -38,7 +38,7 @@ class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UIC
     //MARK:-
     //MARK:- Variables.
     
-    var arrQuizName = ["PhotoGraphy","Photo & Video Editor","VideoGraphy"]
+    var arrQuizName = ["Photo Grids","Photo & Video Editor","VideoGraphy"]
     var arrTotalQuiz = ["Photo editor for social usage","Photo & Video editor for social usage","Video editor for multiple use"]
     var arrQuizImg = ["1","2","3"]
     
@@ -120,6 +120,10 @@ class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let obj : LoadShapesVC = self.storyboard?.instantiateViewController(withIdentifier: "LoadShapesVC") as! LoadShapesVC
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
     }
                
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

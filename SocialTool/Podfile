@@ -7,6 +7,13 @@ target 'SocialTool' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Firestore'
 pod "Keychain"
+pod 'ImageScrollView'
+pod 'IQKeyboardManagerSwift'
+pod 'IGColorPicker'
+pod 'SVProgressHUD'
+pod 'OpalImagePicker'
+pod 'ZoomImageView'
+pod 'ANLoader'
 
 
 
