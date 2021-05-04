@@ -40,7 +40,7 @@ class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UIC
     
     var arrQuizName = ["Photo Grids","Photo & Video Editor","VideoGraphy"]
     var arrTotalQuiz = ["Photo editor for social usage","Photo & Video editor for social usage","Video editor for multiple use"]
-    var arrQuizImg = ["1","2","3"]
+    var arrQuizImg = ["101","102","103"]
     
     //MARK:-
     //MARK:- UIview Life Cycles.
@@ -121,8 +121,10 @@ class Theme7DashBoardController: UIViewController, UICollectionViewDelegate, UIC
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            let obj : LoadShapesVC = self.storyboard?.instantiateViewController(withIdentifier: "LoadShapesVC") as! LoadShapesVC
-            self.navigationController?.pushViewController(obj, animated: true)
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoadShapesVC") as! LoadShapesVC
+            newViewController.modalPresentationStyle = .fullScreen
+            self.present(newViewController, animated: true, completion: nil)
         }
     }
                
